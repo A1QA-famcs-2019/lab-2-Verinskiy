@@ -24,7 +24,7 @@ public class OnlinerTest {
         onlinerMainPage.clickLogIn();
 
         LoginForm loginForm = new LoginForm();
-        loginForm.login();
+        loginForm.login("verinskij438@gmail.com","8535007741");
 
         MainActions task3 = new MainActions();
         task3.actions();

@@ -9,9 +9,9 @@ public class LoginForm {
     private WebElement passwordTextField = Browser.getDriver().findElement(By.xpath("//div[contains(@class,'auth-form__line')]//input[@type=\"password\"]"));
     private WebElement loginButton = Browser.getDriver().findElement(By.xpath("//div[contains(@class, 'auth-form__control')]//button[@type='submit']"));
 
-    public void login() {
-        loginTextField.sendKeys("verinskij438@gmail.com");
-        passwordTextField.sendKeys("8535007741");
+    public void login( String login, String password) {
+        loginTextField.sendKeys(login);
+        passwordTextField.sendKeys(password);
         loginButton.click();
         final WebElement ikonka = Browser.getDriver().findElement(By.xpath("//div[contains(@class, 'b-top-profile__image js-header-user-avatar')]"));
     }
